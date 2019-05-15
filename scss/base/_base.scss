@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+html {
+    /* decrease font size of font element - divide 10px by 6px - convert into percentage - multiply by 100 - makes font size 10px */
+    font-size: 62.5%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr);
+    grid-template-rows: repeat(4, min-content);
+    grid-row-gap: 1.6rem;
+    background-color: color(tertiary);
+}
